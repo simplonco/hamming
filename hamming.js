@@ -10,9 +10,10 @@ function Hamming() {};
 //finally i did it
 Hamming.prototype.compute = function(strand1, strand2) {
   var adoar = 0;
-  for (var i=0; i <= strand1.length; i++) {
-      if (strand1.substr(i,1) !== strand2.substr(i,1)) {
-          adora = adora + 1;
+  var leg = strand1.length;
+  for (var i=0; i<= leg; i++) {
+      if ((strand1.substr(i,1))!==(strand2.substr(i,1))) {
+          adora= adora +1;
       }
   }
   return adora;
