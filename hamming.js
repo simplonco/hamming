@@ -9,9 +9,10 @@
 function Hamming() {};
 
 Hamming.prototype.compute = function (strand1, strand2) {
-var dif =0;
-for (i==0; i<= strlen(strand1); i++){
-  if (strand1.substr(i, 1)!==(strand2.substr(i, 1))){
+var dif = 0;
+var len = strand1.length;
+for (var i=0; i<= len ; i++){
+  if (strand1.substr(i, 1)!==(strand2.substr(i, 1))) {
     dif= dif +1;
   }
 }
