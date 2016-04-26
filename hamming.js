@@ -19,13 +19,13 @@ Hamming.prototype.compute = function (strand1, strand2) {
                 dif.push(i);
 
             }           
-
+  return(dif);
         }
         console.log(dif.length);
     } 
    
   
-    return(dif);
+    
 };
 
 module.exports = Hamming;
