@@ -25,8 +25,7 @@ Hamming.prototype.compute = function (strand1, strand2) {
     } 
    
   
-    
-    
+    return(dif);
 };
 
 module.exports = Hamming;
