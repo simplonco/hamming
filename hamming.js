@@ -9,9 +9,24 @@
 function Hamming() {};
 
 Hamming.prototype.compute = function (strand1, strand2) {
-//
-// YOUR CODE GOES HERE
-//
+  var st = strand1.split("");
+    var st2 = strand2.split("");
+    if (st.length == st2.length) {
+        var len = st.length;
+        var dif = [];
+        for (var i = 0; i < len; i++) {
+            if (st[i] != st2[i]) {
+                dif.push(i);
+
+            }           
+
+        }
+        console.log(dif.length);
+    } 
+   
+  
+    
+    
 };
 
 module.exports = Hamming;
