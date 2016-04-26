@@ -9,9 +9,13 @@
 function Hamming() {};
 
 Hamming.prototype.compute = function (strand1, strand2) {
-//
-// YOUR CODE GOES HERE
-//
+var dif =0;
+for (i==0; i<= strlen(strand1); i++){
+  if (strand1.substr(i, 1)!==(strand2.substr(i, 1))){
+    dif= dif +1;
+  }
+}
+return dif;
 };
 
 module.exports = Hamming;
