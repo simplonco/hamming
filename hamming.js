@@ -7,16 +7,14 @@
 'use strict';
 
 function Hamming() {};
-//finally i did it 
+//finally i did it
 Hamming.prototype.compute = function(strand1, strand2) {
-  var j = 0;
-  for (i = 0; i < strand1.length; i++) {
-      if (strand1[i] != strand2[i]) {
-          j = j + 1;
+  var adoar = 0;
+  for (var i=0; i <= strand1.length; i++) {
+      if (strand1.substr(i,1) !== strand2.substr(i,1)) {
+          adora = adora + 1;
       }
-
   }
-  return j;
+  return adora;
 };
-
 module.exports = Hamming;
