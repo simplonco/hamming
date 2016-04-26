@@ -4,18 +4,18 @@
 // Make sure to look at test.script.js--that should give you some hints about what is
 // expected here.
 
-'use strict';
 
 function Hamming() {};
 //finally i did it
 Hamming.prototype.compute = function(strand1, strand2) {
-  var adoar = 0;
-  var leg = strand1.length;
-  for (var i=0; i<= leg; i++) {
-      if ((strand1.substr(i,1))!==(strand2.substr(i,1))) {
-          adora= adora +1;
-      }
-  }
-  return adora;
-};
-module.exports = Hamming;
+  +var dif = 0;
+   +var len = strand1.length;
+   +for (var i=0; i<= len ; i++){
+   +  if (strand1.substr(i, 1)!==(strand2.substr(i, 1))) {
+   +    dif= dif +1;
+   +  }
+   +}
+   +return dif;
+    };
+
+    module.exports = Hamming;
