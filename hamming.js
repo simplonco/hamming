@@ -10,7 +10,7 @@ function Hamming() {};
 
 Hamming.prototype.compute = function (strand1, strand2) {
   var x = 0;
-  for (i = 0; i < strand1.length; i++) {
+  for (var i = 0; i < strand1.length; i++) {
     if (strand1[i] != strand2[i]) {
       x = x + 1;
     } else {
