@@ -1,17 +1,13 @@
-//
-// This is only a SKELETON file for the 'Hamming' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-// Make sure to look at test.script.js--that should give you some hints about what is
-// expected here.
-
-'use strict';
-
-function Hamming() {};
-
-Hamming.prototype.compute = function (strand1, strand2) {
-//
-// YOUR CODE GOES HERE
-//
+function Hamming() {}
+//finally i did it
+Hamming.prototype.compute = function(strand1, strand2) {
+    var dif = 0;
+    for (var i = 0; i <= strand1.length; i++) {
+        if (strand1[i] != strand2[i]) {
+            dif = dif + 1;
+        }
+    }
+    return dif;
 };
 
 module.exports = Hamming;
