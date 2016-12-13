@@ -8,10 +8,17 @@
 
 function Hamming() {};
 
-Hamming.prototype.compute = function (strand1, strand2) {
-//
-// YOUR CODE GOES HERE
-//
+Hamming.prototype.compute = function(strand1, strand2) {
+
+    var x = 0;
+
+    for (var i = 0; i < strand1.length; ++i) {
+
+        if (strand1[i] != strand1[i]) {
+            x = x + 1;
+        }
+    }
+    return x
 };
 
 module.exports = Hamming;
